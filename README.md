@@ -1,4 +1,4 @@
-# 📈 KIS Auto Trading System
+#  KIS Auto Trading System
 ### 한국투자증권 API 기반 자동매매 시스템
 
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org)
@@ -7,21 +7,21 @@
 
 ---
 
-## 📌 개요
+## 개요
 
 한국투자증권(KIS) Open API를 활용하여 주식 자동매매를 실행하는 시스템입니다.  
-수업에서 배운 Python 클래스 설계, 모듈화, API 통신 개념을 실제 금융 시스템에 적용했습니다.
+인공지능과금융공학 김주철 교수님의 수업에서 배운 Python 클래스 설계, 모듈화, API 통신 개념을 실제 금융 시스템에 적용한다.
 
 **모의투자 / 실전투자 모두 지원하며, 기본값은 안전한 모의투자입니다.**
 
 ---
 
-## 🗂️ 프로젝트 구조
+## 프로젝트 구조
 
 ```
 kis-auto-trading/
 │
-├── main.py                    # 🚀 메인 실행 파일
+├── main.py                    #  메인 실행 파일
 │
 ├── config/
 │   ├── __init__.py
@@ -96,11 +96,11 @@ KIS_ACCOUNT_NO=계좌번호-01
 KIS_IS_PAPER=true          # 모의투자: true, 실전: false
 ```
 
-> ⚠️ `.env` 파일은 절대 GitHub에 올리지 마세요! (`.gitignore`에 포함됨)
+
 
 ---
 
-## 🚀 실행 방법
+##  실행 방법
 
 ### API 연결 테스트
 
