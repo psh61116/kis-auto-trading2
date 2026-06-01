@@ -51,7 +51,7 @@ class TradingConfig:
     LONG_MA: int = 20                     # 장기 이동평균 (일)
 
     # 실행 관련
-    POLLING_INTERVAL: float = 1.0         # 가격 조회 주기 (초)
+    POLLING_INTERVAL: float = 10.0         # 가격 조회 주기 (초)
     MARKET_OPEN: str = "09:00"
     MARKET_CLOSE: str = "15:30"
 
