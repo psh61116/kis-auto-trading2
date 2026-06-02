@@ -37,7 +37,7 @@ class KISAuth:
         Raises:
             RuntimeError: 토큰 발급 실패 시
         """
-        url = api_config.BASE_URL + self.TOKEN_URL
+        url = api_config.BASE_URL_REAL + self.TOKEN_URL
         payload = {
             "grant_type": "client_credentials",
             "appkey": api_config.APP_KEY,
@@ -101,6 +101,7 @@ class KISAuth:
             "appkey": api_config.APP_KEY,
             "appsecret": api_config.APP_SECRET,
             "tr_id": tr_id,
+            "custtype": "P",
         }
         if extra:
             headers.update(extra)

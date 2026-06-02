@@ -126,6 +126,7 @@ class MovingAverageCrossStrategy:
             str | None: 실행된 액션 ("buy" / "sell" / "stop_loss" / "take_profit" / None)
         """
         # 현재가 조회
+        logger.info(f"[{self.symbol}] 현재가 조회 중...")
         current = market_data.get_current_price(self.symbol)
         current_price = current["price"]
 
@@ -138,6 +139,7 @@ class MovingAverageCrossStrategy:
             return exit_reason
 
         # MA 신호 체크
+        logger.info(f"[{self.symbol}] 일봉 조회 중...")
         df = self._fetch_ohlcv()
         df = self._compute_signals(df)
 
